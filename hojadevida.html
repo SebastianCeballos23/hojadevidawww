@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<title>Hoja de Vida - Sebastian Ceballos</title>
+<style>
+      table {
+        border-collapse: collapse;
+        width: 90%;
+      }
+
+      td {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+
+      .column1 {
+        background-color: #f2f2f2;
+      }
+
+      .column2 {
+        background-color: #e6e6e6;
+      }
+
+      .column3 {
+        background-color: #d9d9d9;
+      }
+
+      td + td {
+        padding-left: 50px;
+      }
+
+      .hidden {
+        display: none;
+      }
+    </style>
+    <script>
+      function toggleContent(column) {
+        var content = document.getElementById(column);
+        if (content.style.display === "none") {
+          content.style.display = "block";
+        } else {
+          content.style.display = "none";
+        }
+      }
+    </script>
+  </head>
+  <body>
+	<h1 style="background-color: grey;">Sebastián Ceballos Tosne</h1>
+    <table>
+      <tr>
+        <td class="column1" onclick="toggleContent('content1')"><h2>DATOS PERSONALES</h2></td>
+        <td class="column2" onclick="toggleContent('content2')"><h2>FORMACIÓN ACADÉMICA</h2></td>
+        <td class="column3" onclick="toggleContent('content3')"><h2>EXPERIENCIA LABORAL</h2></td>
+      </tr>
+      <tr>
+        <td class="column1">
+          <div id="content1" class="hidden">
+            <p><strong>Información de Contacto:</strong></p>
+            <b>• Número de teléfono:</b> 320 467 3314
+	    <br>
+	    <b>• Correo electrónico:</b> sebastian.tosne@correounivalle.edu.co
+	<br>
+	<b>• Ciudad:</b> Jamundí
+	<br>
+	<b>• Departamento:</b> Valle del Cauca
+	<p><strong>Perfil Profesional:</strong></p>
+	Tecnólogo en sistemas de la información graduado
+	<br>de la Universidad del Valle - Sede Norte del Cauca,
+	<br>con énfasis en desarrollo de software, administración
+	<br>de redes y servidores y con amplia experiencia en
+	<br>soporte del área de TI. Orientado al logro, capacidad
+	<br>de resolución de problemas, análisis de datos, atención
+	<br>al cliente y trabajo en equipo.
+	
+	<p><strong>Hobbies:</strong></p>
+	Apasionado por los videojuegos, gusto por las películas,
+	<br>cine y televisión. Afinidad a los deportes y afición
+	<br>por la música. Agrado a la lectura y constante adquisición
+	<br>de conocimiento.
+          </div>
+        </td>
+        <td class="column2">
+          <div id="content2" class="hidden">
+            <p><strong>Tecnología en Sistemas de la Información</strong> (2017-2023)</p>
+		<b>Universidad del Valle - Sede Norte del cauca</b><br>
+		• Representante Estudiantil<br>
+		• Reconocimiento a la Perseverancia
+	<p><strong>Técnico en Asistencia Administrativa</strong> (2014-2015)</p>
+	<b>Servicio Nacional de Aprendizaje (SENA)</b>
+	<p><strong>Bachiller Técnico</strong> (2004-2015)</p>
+	<b>Institución Educativa Alfonso López Pumarejo</b><br>
+	• Reconocimiento a la Excelencia<br>
+	• Reconocimiento a la Perseverancia<br>
+	• Quinto Mejor ICFES
+          </div>
+        </td>
+        <td class="column3">
+          <div id="content3" class="hidden">
+            <p><strong>Analista soporte TI</strong> (2023-Actualmente)</p>
+	    	• Jhamf Group SAS
+	    <p><strong>Mensajero Motorizado</strong> (2022)</p>
+	    	• Droguería Salud y Vida MD SAS
+	    <p><strong>Mensajero Motorizado</strong> (2021-2022)</p>
+	    	• Organización Hércules
+          </div>
+        </td>
+      </tr>
+    </table>
+  </body>
+</html>
